@@ -8,10 +8,12 @@ import LinksListFilters from './LinksListFilters';
 const Link = () => {
     return (
         <div>
-            <PrivateHeader title="Link Component Here" />
-            <LinksListFilters />
-            <AddLink />
-            <LinksList  />
+            <PrivateHeader title="Your Links" />
+            <div className="page-content">
+                <LinksListFilters />
+                <AddLink />
+                <LinksList  />
+            </div>
         </div>
     );
 }

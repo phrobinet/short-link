@@ -53,10 +53,12 @@ export class LinksListFilters extends Component {
     render() {
         return (
             <div>
-            <label><input type="checkbox" checked={!this.state.check} onChange={(e) => {
+            <label className="checkbox">
+                <input className="checkbox__box" type="checkbox" checked={!this.state.check} onChange={(e) => {
                 // e.target.checked ? Session.set('showVisible', false) : Session.set('showVisible', true);
                 Session.set('showVisible', !e.target.checked)
-            }} />show hidden links</label>
+                }} />show hidden links
+            </label>
         </div>
         );
     }
