@@ -40,7 +40,7 @@ export class Login extends Component {
                         <button className="button">Login</button>
                     </form>
 
-                    <Link to="/signup" >Have you an account?</Link>
+                    <Link to="/signup" >Need an account?</Link>
                 </div>
             </div>
         );
